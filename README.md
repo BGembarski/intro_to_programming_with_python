@@ -44,8 +44,36 @@ out using an IDE.
 |Sublime Text| Text Editor | Sublime is another popular text editor, but it is closed source and will constantly prompt you to buy the full version. Sublime also has numerous extensions that allow you to customize your experience.|[install](https://www.sublimetext.com/)|
 
 ## Lessons
+### Lesson 1 - Variables
+Variables are one of the most basic concepts in programming. A variable is
+essentially a data store that you can reference by name. Variables are assigned
+using the assignment operator '=' and can be re-assigned at any time. Once a
+variable has been assigned, the value within the variable can be used by
+referencing the variable.
 
-### Lesson 1 - Simple Data Types
+Example:
+```python
+# variable x is assigned the value of 5
+x = 5
+# variable  y is assigned the  value of x
+y = x
+# print out the value of both of the variables
+print x
+print y
+```
+**Exercises**   
+The exercises for this lesson can be found in the lesson_1 directory. Download
+the files and open them in your IDE or text editor.
+
+Ex 1. - Create and assign a variable with the name 'length' and assign it the
+value 10. Run the program to verify your output.
+
+Expected Output:
+```bash
+Length is 10
+```
+
+### Lesson 2 - Simple Data Types
 There are three main simple data types that are used extensively in programming.
 
 **Integers**  
@@ -105,9 +133,13 @@ Example:
 x = 5
 y = 5
 z = 2
+# Evaluates to True
 bool_true = (x == y)
+# Evaluates to False
 bool_false = (x == z)
+# Evaluates to False
 bool_also_false = (bool_false and bool_true)
+# Evaluates to True
 bool_also_true = (bool_false or bool_true)
 ```
 The example above shows how booleans can be combined to express complex conditions.
@@ -129,11 +161,108 @@ the possible types of boolean operators and what they mean.
 |<=| Less than or equal to|
 
 **Exercises**  
-The exercises for this lesson can be found in the lesson_one directory. Download
+The exercises for this lesson can be found in the lesson_2 directory. Download
 the files and open them in your IDE or text editor.
 
-### Lesson 2 - If Statements
-### Lesson 3 - While Loops
-### Lesson 4 - For Loops
-### Lesson 5 - Functions
-### Lesson 6 - Classes
+Ex 1. - Create and assign a variable with the name 'divisor' such that it divides
+the variable 'dividend' so that the result is 2. Save the result in a variable
+named 'result'
+
+Expected Output:
+```bash
+Result is 2
+```
+
+Ex 2. - Modify the first exercise so that 'divisor' is a floating point number.
+
+Expected Output:
+```bash
+Result is 2.2
+```
+
+Ex 3. - Assign values to the enumerated values such that the printed expression
+evaluates to True.
+
+Expected Output:
+```
+Expression is True
+```
+
+### Lesson 3 - If Statements
+If statements allow you to control what code gets executed. If statements enable
+your program to branch - taking one path if a condition is true or taking a
+different path if the expression is false. If statements use booleans to
+determine which path to take.
+
+Example
+```python
+x = 6
+if x == 5:
+  print "x is 5"
+
+print "done"
+```
+In the above example the code snippet printing the value of x will only be run
+if the value of x is 5, but the print statement at the end will always run no
+matter what the value of x is since it is outside of the if statement.
+
+What if you want to check for multiple values of x?
+Easy!
+```python
+x = 6
+if x == 5:
+  print "x is 5"
+elif x == 6:
+  print "x is 6"
+elif x == 7:
+  "x is 7"
+
+print "done"
+```
+The above example will first evaluate the expression x == 5 to False, then it
+will check the next expression x == 6 which evaluates to True. Once one
+expression in an if block evaluates to True and a branch is chosen, the other
+expressions in the if-block will not be evaluated. For instance, in the previous
+example the condition x == 7 is never checked since x == 6 evaluated to True.
+The output of the example above is:
+```
+x is 6
+done
+```
+
+It is also possible to write a condition that only executes if all other
+conditions evaluate to False. This can be done using the keyword 'else'
+
+Example
+```python
+x = 6
+if x == 5:
+  print "x is 5"
+else:
+  print "x is not 5"
+
+print "done"
+```
+
+The output of this snippit is:
+```
+x is not 5
+done
+```
+
+**Exercises**  
+Ex 1. - The variable 'random_value' is randomly assigned a value between 1 and
+10 (inclusive). Write an if statement block that prints 'value is low' if
+random_value is in the range 1-3, 'value is medium' if random_value is in the
+range 4-6, and 'value is high' if random_value is in the range 7-10.
+
+Don't forget that you can combine multiple conditions into one expression
+using the 'and' and 'or' keywords. Also don't forget about the '<' and '>'
+boolean operators. See if you can re-write your if statement block multiple ways
+and still get the correct output.
+
+### Lesson 4 - Complex Data Types
+### Lesson 5 - While Loops
+### Lesson 6 - For Loops
+### Lesson 7 - Functions
+### Lesson 8 - Classes
