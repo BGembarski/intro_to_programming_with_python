@@ -36,12 +36,12 @@ your code and manage your projects. If you're comfortable using the terminal
 I recommend you use a text editor, otherwise it will likely be easier to start
 out using an IDE.
 
-|Software|Type|Description|Installation|
-|--------|----|-----------|
-|Wing|IDE|Wing is an excellent IDE for learning python. It enables you to write and run your code in the same place which will enable you to focus on coding.| [install](https://wingware.com/downloads/wingide-personal)|
-|Atom|Text Editor|Atom is an open source [electron](https://electron.atom.io/) based text editor with plenty of packages that allow you to customize your experience.|[install](https://atom.io/)|
-|VS Code|Text Editor| Like Atom, VS Code is an open source text editor with numerous extensions that enable you to customize your editor. |[install](https://code.visualstudio.com/)|
-|Sublime Text| Text Editor | Sublime is another popular text editor, but it is closed source and will constantly prompt you to buy the full version. Sublime also has numerous extensions that allow you to customize your experience.|[install](https://www.sublimetext.com/)|
+|Software|Type|Description|Installation|  
+|--------|----|-----------|------------|
+|Wing|IDE|Wing is an excellent IDE for learning python. It enables you to write and run your code in the same place which will enable you to focus on coding.| [install](https://wingware.com/downloads/wingide-personal)|  
+|Atom|Text Editor|Atom is an open source [electron](https://electron.atom.io/) based text editor with plenty of packages that allow you to customize your experience.|[install](https://atom.io/)|  
+|VS Code|Text Editor| Like Atom, VS Code is an open source text editor with numerous extensions that enable you to customize your editor. |[install](https://code.visualstudio.com/)|  
+|Sublime Text| Text Editor | Sublime is another popular text editor, but it is closed source and will constantly prompt you to buy the full version. Sublime also has numerous extensions that allow you to customize your experience.|[install](https://www.sublimetext.com/)|  
 
 ## Lessons
 ### Lesson 1 - Variables
