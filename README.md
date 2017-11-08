@@ -30,7 +30,7 @@ You should see Python 2.7 in the output.
 Now that you've installed Python, you need either a text editor or an IDE to
 write code! Text editors are a light-weight way of editing code and often
 have a wide variety of extensions to provide additional functionality of your
-choice such as syntax highlighting and [linters.](https://en.wikipedia.org/wiki/Lint_(software) IDEs are more resource
+choice such as syntax highlighting and [linters.](https://en.wikipedia.org/wiki/Lint_(software)) IDEs are more resource
 intensive to run, but come with built-in features that make it easy to execute
 your code and manage your projects. If you're comfortable using the terminal
 I recommend you use a text editor, otherwise it will likely be easier to start
