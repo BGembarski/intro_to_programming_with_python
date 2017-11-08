@@ -262,6 +262,158 @@ boolean operators. See if you can re-write your if statement block multiple ways
 and still get the correct output.
 
 ### Lesson 4 - Complex Data Types
+Simple data types are useful, but it's hard to create any complex behavior
+without some more complex data types. This section will introduce you to
+lists, strings, sets, and dictionaries (known as maps in other languages).
+
+**Lists**  
+Lists are useful when you want to store multiple values in one variable. Lists
+enable you to store an ordered set of 'variables' without needing a reference to
+each individual item in the list.
+
+This is how you create a list:
+```python
+# Create a list with 3 integers in it
+integer_list = [1, 3, 2]
+```
+
+You can also create an empty list:
+```python
+my_list = []
+```
+
+And you can add elements to list like this:
+```python
+my_list = []
+my_list.append(5)
+# These two lines are equivalent to: my_list = [5]
+```
+
+To access items of a list, you need to access the index of an item. An index is
+just a number that refers to which item in the list you want. In computer science
+index numbers start at 0.
+
+```python
+integer_list = [1, 3, 2]
+# Indices ->    0  1  2
+
+# to access a list item, use this syntax
+one = integer_list[0]
+two = integer_list[1]
+three = integer_list[2]
+```
+[Click here for more information on list operations](https://docs.python.org/2/tutorial/datastructures.html)
+
+**Strings**  
+Strings are a special case of lists. They are essentially a list of characters.
+A character is just what you'd expect, an ASCII or unicode character.
+
+Example String
+```python
+sample_string = "text here"
+# sample_string is really a list -> ['t', 'e', 'x', 't', ' ', 'h', 'e', 'r', 'e']
+```
+
+Just like lists, strings can be accessed using an index with the same syntax.
+```python
+sample_string = "text here"
+letter_x = sample_string[2]
+```
+The example above stores the value 'x' in the variable 'letter_x'
+
+[Click here for more information on string operations](https://docs.python.org/2/library/string.html)
+
+**Sets**  
+Sets are containers just like lists, except they don't guarantee order and
+they disallow duplicate entries. Sets are useful when you want to determine
+if you've encountered an element before since checking if an object is a
+member of a set is a very fast operation. Sets are also useful for determining
+all unique items in a collection since they don't allow duplicates.
+
+This is how you create a set:
+```python
+from sets import Set
+my_set = Set()
+```
+
+You can add an element to a set like this:
+```python
+from sets import Set
+my_set = Set()
+my_set.add(5)
+```
+
+You can remove an element from a set like this:
+```python
+from sets import Set
+my_set = Set()
+my_set.add(5)
+my_set.remove(5)
+```
+
+Checking if an element is in a set using the 'in' keyword:
+```python
+from sets import Set
+my_set = Set()
+my_set.add(5)
+# checking if an element is in a set returns a boolean value
+this_is_false = (6 in my_set)
+this_is_true = (5 in my_set)
+```
+
+[Click here for more information on set operations](https://docs.python.org/2/library/sets.html)
+
+**Dictionaries**   
+Dictionaries are a set of key and value pairs. Just like sets, a dictionary
+can't have duplicate keys and looking up a key is a fast operation. Dictionaries
+allow you to map a value for each key. Dictionaries are useful whenever you need
+the functionality of a set, but you also want to store an associated piece of
+information with each element in a set. For instance, you could use a dictionary
+to determine all unique items in a collection as well as the number of times each
+element occurred.
+
+You can create a dictionary like this:
+```python
+my_dictionary = {}
+```
+
+Adding a key-value pair to a dictionary is easy:
+```python
+my_dictionary = {}
+my_dictionary['my key'] = 'my value'
+```
+
+You can retrieve the value for a given key using the same syntax:
+```python
+my_dictionary = {}
+my_dictionary['my key'] = 'my value'
+my_value = my_dictionary['my key']
+# my_value now holds the string 'my value'
+```
+
+Checking if a key is in a dictionary can be done with the same syntax as sets:
+You can retrieve the value for a given key using the same syntax:
+```python
+my_dictionary = {}
+my_dictionary['my key'] = 'my value'
+this_is_true = ('my key' in my_dictionary)
+```
+
+[Click here for more information on dictionary operations](https://docs.python.org/2/tutorial/datastructures.html#dictionaries)
+
+**Determining the size of a complex data type**
+You will often find that it is useful to know the size of a list, string, set, or
+dictionary. Checking the size of a complex data type can be done using Python's
+built in 'len()' function.
+
+This is how you use len to check the size of a list, string, set, or dictionary:
+```python
+my_list = [1, 2, 3]
+my_list_size = len(my_list)
+# my_list_size now holds the integer value 3 since my_list has 3 elements
+```
+
+**Exercises**
 ### Lesson 5 - While Loops
 ### Lesson 6 - For Loops
 ### Lesson 7 - Functions
